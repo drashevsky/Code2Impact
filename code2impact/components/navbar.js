@@ -45,8 +45,8 @@ export default class NavBar extends React.Component {
     }
     render(){
         return(
-            <div className="outer">
-                <Navbar type="dark" theme="" expand="md" fixed="true" className="background">
+            <div className="outer sticky-top">
+                <Navbar type="dark" theme="" expand="md" className="background sticky-top">
                     <NavbarBrand href="#" className="background">Code2Impact</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} />
 
