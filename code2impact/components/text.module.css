@@ -6,7 +6,9 @@
 }
 .rightAlign{
     text-align: right;
+    padding-left: 40%;
 }
 .leftAlign{
     text-align: left;
+    padding-right: 40%;
 }

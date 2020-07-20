@@ -10,6 +10,7 @@ import {
     Row,
     Col
 } from "shards-react";
+import $ from "jquery";
 
 export default function Home() {
   return (
