@@ -13,12 +13,12 @@ export default function Home() {
       <NavBar></NavBar>
       <div className="mission">
           <h1 className={styles.sectionTitle}>Code 2 Impact</h1>
-          <h2 className={styles.sectionSubtitle}>
+          <h4 className={styles.sectionSubtitle}>
               Code2Impact is raising money for the BLM movement through a nonprofit
               CS initiative in which they provide younger generation students opportunities to pursue
               industrial and/or recreational applications of CS courses with a personalized mentorship
               program.
-          </h2>
+          </h4>
       </div>
 
       <style jsx>{`
@@ -30,7 +30,7 @@ export default function Home() {
             min-height: 100vh;
         }
         .mission{
-            height: 80vh;
+            min-height: 80vh;
             text-align: center;
             padding: 10%;
         }
@@ -45,6 +45,8 @@ export default function Home() {
         body {
           margin: 0;
           padding: 0;
+          width: 100%;
+          height: 100%;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
