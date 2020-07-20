@@ -45,9 +45,9 @@ export default class NavBar extends React.Component {
     }
     render(){
         return(
-            <>
-                <Navbar type="dark" theme="primary" expand="md" full fixed="true">
-                    <NavbarBrand href="#">Code2Impact</NavbarBrand>
+            <div className="outer">
+                <Navbar type="dark" theme="" expand="md" fixed="true" className="background">
+                    <NavbarBrand href="#" className="background">Code2Impact</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} />
 
                     <Collapse open={this.state.collapseOpen} navbar>
@@ -55,6 +55,11 @@ export default class NavBar extends React.Component {
                             <NavItem>
                                 <NavLink active href="#">
                                     Home
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink active href="#">
+                                    About
                                 </NavLink>
                             </NavItem>
                             <Dropdown
@@ -73,7 +78,15 @@ export default class NavBar extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </>
+                <style jsx global>{`
+                    .outer{
+                        position: sticky-top;                 
+                    }     
+                    .background{
+                        background-color: #01245c;
+                    }           
+                `}</style>
+            </div>
         );
     }
 }
