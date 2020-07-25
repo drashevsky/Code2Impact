@@ -18,7 +18,7 @@ export default class WhyusHome extends React.Component {
                         <h4 className={`${styles.sectionSubtitle} ${styles.rightAlign} ${styles.padLeft}`}>
                             We offer a variety of specialized courses that explore computer science concepts in depth.
                         </h4>
-                        <div className="container m-0 p-2">
+                        <div className="container mt-5 p-2 centered-cards">
                             <Row>
                                 <Col md={3}>
                                     <Card style={{ maxWidth: "300px", background: "rgba(0,0,0,0)" }} className="m-0 p-0">
@@ -57,7 +57,7 @@ export default class WhyusHome extends React.Component {
                                     </Card>
                                 </Col>
                             </Row>
-                            <div className="centered">
+                            <div className="mt-5 centered">
                                 <Button>View calendar</Button>
                             </div>
                         </div>
@@ -76,16 +76,20 @@ export default class WhyusHome extends React.Component {
                     </div>
                 </div>
                 <style jsx>{`
-                    .whyus{
+                    .whyus {
                         min-height: 80vh;
                         padding: 10%;
                     }    
-                    .whyussection{
+                    .whyussection {
                         min-height: 50vh;
                         margin: 10% 0% 10% 0%;
                     }
-                    .centered{
+                    .centered {
                         text-align:center;
+                    }
+                    .centered-cards {
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 `}</style>
             </>
