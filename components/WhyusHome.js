@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../styles/text.module.css";
+import styles from "./text.module.css";
 import {Button, Card, CardBody, CardTitle, Col, Row} from "shards-react";
 
 export default class WhyusHome extends React.Component {
