@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./text.module.css";
+import styles from "../styles/text.module.css";
 
 export default class MissionHome extends React.Component {
     render() {
