@@ -62,6 +62,11 @@ export default class NavBar extends React.Component {
                                     About
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink active href="#">
+                                    Information
+                                </NavLink>
+                            </NavItem>
                             <Dropdown
                                 open={this.state.dropdownOpen}
                                 toggle={this.toggleDropdown}
@@ -70,9 +75,10 @@ export default class NavBar extends React.Component {
                                     Classes
                                 </DropdownToggle>
                                 <DropdownMenu>
-                                    <DropdownItem>Java</DropdownItem>
-                                    <DropdownItem>The other one</DropdownItem>
-                                    <DropdownItem>the one i forgot</DropdownItem>
+                                    <DropdownItem>APCSA</DropdownItem>
+                                    <DropdownItem>Data Structures</DropdownItem>
+                                    <DropdownItem>Game Development</DropdownItem>
+                                    <DropdownItem>Data Science</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </Nav>

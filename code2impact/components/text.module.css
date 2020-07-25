@@ -6,9 +6,24 @@
 }
 .rightAlign{
     text-align: right;
-    padding-left: 40%;
 }
 .leftAlign{
     text-align: left;
+}
+.padRight{
     padding-right: 40%;
+
+}
+@media (max-width: 600px){
+    .padRight{
+        padding-right: 0%;
+    }
+}
+.padLeft{
+    padding-left: 40%;
+}
+@media (max-width: 600px){
+    .padLeft{
+        padding-left: 0%;
+    }
 }
