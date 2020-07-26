@@ -10,7 +10,8 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    Collapse
+    Collapse,
+    Button
 } from "shards-react";
 
 export default class NavBar extends React.Component {
@@ -47,13 +48,13 @@ export default class NavBar extends React.Component {
         return(
             <div className="outer sticky-top">
                 <Navbar type="dark" theme="" expand="md" className="background sticky-top">
-                    <NavbarBrand href="#" className="background">Code2Impact</NavbarBrand>
+                    <NavbarBrand href="/" className="background">Code2Impact</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} />
 
                     <Collapse open={this.state.collapseOpen} navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink active href="#">
+                                <NavLink active href="/">
                                     Home
                                 </NavLink>
                             </NavItem>
@@ -67,20 +68,24 @@ export default class NavBar extends React.Component {
                                     Information
                                 </NavLink>
                             </NavItem>
-                            <Dropdown
-                                open={this.state.dropdownOpen}
-                                toggle={this.toggleDropdown}
-                            >
-                                <DropdownToggle nav caret>
-                                    Classes
-                                </DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem>APCSA</DropdownItem>
-                                    <DropdownItem>Data Structures</DropdownItem>
-                                    <DropdownItem>Game Development</DropdownItem>
-                                    <DropdownItem>Data Science</DropdownItem>
-                                </DropdownMenu>
-                            </Dropdown>
+                                <Dropdown
+                                    open={this.state.dropdownOpen}
+                                    toggle={this.toggleDropdown}
+                                    group
+                                >
+                                    <NavItem>
+                                        <NavLink active href="/classes">
+                                            Classes
+                                        </NavLink>
+                                    </NavItem>
+                                    <DropdownToggle nav split/>
+                                    <DropdownMenu>
+                                        <DropdownItem href="/classes#introtojava">APCSA</DropdownItem>
+                                        <DropdownItem href="/classes#datastructures">Data Structures</DropdownItem>
+                                        <DropdownItem href="/classes#gamedevelopment">Game Development</DropdownItem>
+                                        <DropdownItem href="/classes#datascience">Data Science</DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>
