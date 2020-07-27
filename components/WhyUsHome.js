@@ -8,15 +8,9 @@ export default class WhyusHome extends React.Component {
             <>
                 <div className="whyus">
                     <div className="whyussection">
-                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign}`}>BLM Cause-centric</h1>
-                        <h4 className={`${styles.sectionSubtitle} ${styles.leftAlign} ${styles.padRight}`}>
-                            100% of the donations Code2Impact is going to BLM organizations including Color of Change, NAACP, and the Black Lives Movement itself.
-                        </h4>
-                    </div>
-                    <div className="whyussection">
-                        <h1 className={`${styles.sectionTitle} ${styles.rightAlign}`}>Diversity of courses</h1>
+                        <h1 className={`${styles.sectionTitle} ${styles.rightAlign}`}>Course Diversity</h1>
                         <h4 className={`${styles.sectionSubtitle} ${styles.rightAlign} ${styles.padLeft}`}>
-                            We offer a variety of specialized courses that explore computer science concepts in depth.
+                            We offer four specialized courses that explore computer science concepts in depth, each packed with up to 16 hours of instructional content and project takeaways.
                         </h4>
                         <div className="container mt-5 p-2 centered-cards">
                             <Row>
@@ -24,8 +18,8 @@ export default class WhyusHome extends React.Component {
                                     <Card style={{ maxWidth: "300px", background: "rgba(0,0,0,0)" }} className="m-0 p-0">
                                         <CardBody className="m-0 p-4">
                                             <CardTitle className={styles.sectionTitle}>APCSA</CardTitle>
-                                            <p className={styles.sectionSubtitle}>This course will familiarize students with a regular APCSA curriculum. Students will learn about the basics of Java syntax as well as loops, methods, and basic data structures including arrays and ArrayLists. </p>
-                                            <Button>View course &rarr;</Button>
+                                            <p className={styles.sectionSubtitle}>This course will familiarize students with the content of a regular APCSA curriculum with no prior Java experience required. Students will learn about the basics of Java syntax and typical content of an APCSA class including variables, Objects, common loops, methods, and basic data structures like arrays.</p>
+                                            <Button href="/classes#introtojava">View course &rarr;</Button>
                                         </CardBody>
                                     </Card>
                                 </Col>
@@ -33,8 +27,8 @@ export default class WhyusHome extends React.Component {
                                     <Card style={{ maxWidth: "300px", background: "rgba(0,0,0,0)" }} className="m-0 p-0">
                                         <CardBody className="m-0 p-4">
                                             <CardTitle className={styles.sectionTitle}>Data Structures</CardTitle>
-                                            <p className={styles.sectionSubtitle}>This course will familiarize students with numerous advanced data structures to supplement their knowledge from APCSA. Students will learn about numerous new data structures like Hash Maps and Linked Lists, learn about their properties and implementation, and solve real world problems using these data structures.</p>
-                                            <Button>View course &rarr;</Button>
+                                            <p className={styles.sectionSubtitle}>Advanced Data Structures (ADSs) will familiarize students with beyond HS level CS concepts to supplement their knowledge from APCSA. Students will be introduced to ADSs like Hash Tables and Linked Lists, learn about their properties and implementation, and solve real world problems using these data structures.</p>
+                                            <Button href="/classes#datastructures">View course &rarr;</Button>
                                         </CardBody>
                                     </Card>
                                 </Col>
@@ -42,8 +36,8 @@ export default class WhyusHome extends React.Component {
                                     <Card style={{ maxWidth: "300px", background: "rgba(0,0,0,0)" }} className="m-0 p-0">
                                         <CardBody className="m-0 p-4">
                                             <CardTitle className={styles.sectionTitle}>Data Science</CardTitle>
-                                            <p className={styles.sectionSubtitle}>This course will make students familiar with the process of creating a data science notebook using Jupyter from scratch. Students will gain a level of familiarity with numerous python libraries including nympty, pandas, and matplotlib and learn how to manipulate, analyze, and visualize real life data from free datasets to answer their own research question.</p>
-                                            <Button>View course &rarr;</Button>
+                                            <p className={styles.sectionSubtitle}>In this course, students will be taught the process of creating a data science notebook using Jupyter. Students will gain a level of familiarity with numerous python libraries including nympty, pandas, and matplotlib and learn how to manipulate, analyze, and visualize real life data from datasets to answer a research question.</p>
+                                            <Button href="/classes#datascience">View course &rarr;</Button>
                                         </CardBody>
                                     </Card>
                                 </Col>
@@ -51,8 +45,8 @@ export default class WhyusHome extends React.Component {
                                     <Card style={{ maxWidth: "300px", background: "rgba(0,0,0,0)" }} className="m-0 p-0">
                                         <CardBody className="m-0 p-4">
                                             <CardTitle className={styles.sectionTitle}>Game Development</CardTitle>
-                                            <p className={styles.sectionSubtitle}>This course will familiarize students with the main features involved in game development and learn how to construct their own 2D and 3D games using a popular, cross-platform game engine. This course will cover C# syntax and methods from scratch before diving into coding player movement, animation, user interface, and more – all of which will be implemented in the creation of a single game.</p>
-                                            <Button>View course &rarr;</Button>
+                                            <p className={styles.sectionSubtitle}>Through Unity, students will learn the main features involved in game development to empower them to create their own 2D game. This course will cover C# syntax and methods from scratch before diving into coding player movement, animation, UI, and more to create your very own, customizable platformer game!</p>
+                                            <Button href="/classes#gamedevelopment">View course &rarr;</Button>
                                         </CardBody>
                                     </Card>
                                 </Col>
@@ -63,25 +57,31 @@ export default class WhyusHome extends React.Component {
                         </div>
                     </div>
                     <div className="whyussection">
-                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign}`}>Mentorship Program</h1>
+                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign}`}>Cause-centric</h1>
                         <h4 className={`${styles.sectionSubtitle} ${styles.leftAlign} ${styles.padRight}`}>
-                            Through our mentorship program, students will be able create their own tangible project for two of our courses - a Jupyter research notebook for data science and a Unity game for game development. Students will be able to communicate with mentors through emails and google forms throughout the course for guidance on their independent projects.
+                            100% of the donations will go to BLM organizations and organizations supporting minority students in STEM such as NAACP, Color of Change, and National Society of Black Engineers.
                         </h4>
                     </div>
                     <div className="whyussection">
                         <h1 className={`${styles.sectionTitle} ${styles.rightAlign}`}>Interactive</h1>
                         <h4 className={`${styles.sectionSubtitle} ${styles.rightAlign} ${styles.padLeft}`}>
-                            All courses come with live sessions where students can engage with other students and ask questions; however, sessions are also recorded if students can’t attend live.
+                            Teachers will teach content through live sessions where students can ask questions at frequent intervals; sessions will also be recorded for all students to view on their own time.
+                        </h4>
+                    </div>
+                    <div className="whyussection">
+                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign}`}>Mentorship Program</h1>
+                        <h4 className={`${styles.sectionSubtitle} ${styles.leftAlign} ${styles.padRight}`}>
+                            Through Discord, students will be able to interact with mentors and other students to ask clarifying questions, seek guidance, and work with other students on customizable projects.
                         </h4>
                     </div>
                 </div>
                 <style jsx>{`
                     .whyus {
                         min-height: 80vh;
-                        padding: 10%;
+                        padding: 0% 10% 0% 10%;
                     }    
                     .whyussection {
-                        min-height: 50vh;
+                        min-height: 40vh;
                         margin: 10% 0% 10% 0%;
                     }
                     .centered {
