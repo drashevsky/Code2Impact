@@ -2,20 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import NavBar from "./Navbar";
 
-export default function Layout({children, calendar}) {
-    let background = (!calendar) ? <style jsx global>{`
-        body{
-            background-color: #01245c;
-            background: linear-gradient(to bottom, #01245c 30%, #000000 100%);
-            background-position: fixed;
-        }
-        .root {
-            background-color: #01245c;
-            background: linear-gradient(to bottom, #01245c 30%, #000000 100%);
-            background-position: fixed;
-        }
-    `}</style> : <style></style>;
-    
+export default function Layout(props) {
     return (
         <>
             <Head>
@@ -25,7 +12,7 @@ export default function Layout({children, calendar}) {
 
             <div className="root">
                 <NavBar />
-                {children}
+                {props.children}
             </div>
 
             <style jsx global>{`
@@ -36,10 +23,14 @@ export default function Layout({children, calendar}) {
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                     sans-serif;
+                    
+                }
+                .root, body {
+                    background-color: #01245c;
+                    background: linear-gradient(to bottom, #01245c 30%, #000000 100%);
+                    background-position: fixed;
                 }
             `}</style>
-
-            {background}
         </>
     )
 }
