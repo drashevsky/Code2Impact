@@ -2,6 +2,7 @@ import styles from "./text.module.css";
 import {Card, CardBody, Col, Container, Row, CardHeader, CardSubtitle, CardTitle} from "shards-react";
 import TabInterface from "./TabInterface";
 import React from "react";
+import Markdown from "markdown-to-jsx";
 
 export default function ClassCard(props) {
     return(

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as PropTypes from 'prop-types';
-
+import Markdown from 'markdown-to-jsx';
 import Tab from './TabText';
 import { Nav, NavItem, NavLink, Card, CardBody } from 'shards-react'
 
@@ -53,6 +53,11 @@ class TabInterface extends Component {
                         <div className="tab-content" style={{color:'lightblue'}}>
                             {children.map((child) => {
                                 if (child.props.label !== activeTab) return undefined;
+                                if (typeof (child.props.children) !== 'string') return (
+                                    <ul>{child.props.children.map((arrayVal) => (
+                                        <li>{arrayVal}</li>
+                                    ))}</ul>
+                                );
                                 return child.props.children;
                             })}
                         </div>
