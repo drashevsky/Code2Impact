@@ -11,7 +11,7 @@ export default function BioCard(props) {
                     <CardSubtitle>{props.roles}</CardSubtitle>
                 </CardHeader>
                 <CardBody className="m-0 p-0 picture">
-                    <img className="picture" src={"https://place-hold.it/300x200"} style={{width:"inherit"}}/>
+                    {props.img !== '' && (<img className="picture" src={"https://place-hold.it/300x200"}/>)}
                 </CardBody>
                 <CardFooter className="p-2">
                     <p>{props.bio}</p>

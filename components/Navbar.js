@@ -59,7 +59,7 @@ export default class NavBar extends React.Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink active href="#">
+                                <NavLink active href="/about">
                                     About
                                 </NavLink>
                             </NavItem>
