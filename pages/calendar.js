@@ -12,7 +12,7 @@ class Calendar extends React.Component {
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
-                                window.onload = () => {
+                                function renderCalendar() {
                                     var calendarEl = document.getElementById('calendar-root');
                                     var calendar = new FullCalendar.Calendar(calendarEl, {
                                         initialView: 'dayGridMonth',
@@ -20,13 +20,18 @@ class Calendar extends React.Component {
                                     });
                                     calendar.render();
                                 }
+                                window.onload = () => {renderCalendar()};
+                                
+                                if (document.readyState === 'complete') {
+                                    renderCalendar();
+                                }
                             `,
                         }}
                     ></script>
                 </Head>
                 <Layout calendar>
                     <div id="calendar-container">
-                        <div id="calendar-root"></div>
+                        <div id="calendar-root" key="calendar-root"></div>
                     </div>
                 </Layout>
                 
@@ -68,6 +73,6 @@ class Calendar extends React.Component {
             </>
         )
     }
-  }
+}
   
   export default Calendar;
