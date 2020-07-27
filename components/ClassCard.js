@@ -8,7 +8,7 @@ export default function ClassCard(props) {
     return(
         <>
             <div className="class" id={props.classId}>
-                <h2 className={`p-3 pt-4 ${styles.sectionTitle}`}></h2>
+                <h2 className={`p-4 pt-4 ${styles.sectionTitle}`}></h2>
                 <h2 className={`p-3 ${styles.sectionTitle}`}>{props.title}</h2>
                 <Card className="classCard">
                     <CardHeader  style={{background:"rgba(0,0,0,1)"}}>
