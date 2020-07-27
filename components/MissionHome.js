@@ -14,13 +14,13 @@ export default class MissionHome extends React.Component {
 
                     <Container className="p-0 m-0 pt-3">
                         <Row className="m-0 p-0">
-                            <Col className="m-0 p-0">
+                            <Col md={6} className="m-0 p-0">
                                 <h2 className={`${styles.sectionTitle} ${styles.leftAlign} pt-5`}>Course Access</h2>
                                 <h5 className={`${styles.sectionSubtitle} ${styles.leftAlign}`}>
                                     <strong> By donating to our GoFundMe, you will be able to access anywhere from 1 to 4 courses from our uniquely-crafted CS program, and your donations will go to professional organizations dedicated to supporting people of color in STEM fields and national organizations committed to making a change in the fight against race-based discrimination.</strong>
                                 </h5>
                             </Col>
-                            <Col className="m-0 p-0 pt-5">
+                            <Col md={6} className="m-0 p-0 pt-5">
                                 <div className={`p-3`}>
                                     <Button>Donate and unlock courses</Button>
                                 </div>

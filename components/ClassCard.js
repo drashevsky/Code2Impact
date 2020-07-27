@@ -6,7 +6,8 @@ import React from "react";
 export default function ClassCard(props) {
     return(
         <>
-            <div className="class" id={props.classId}>
+            <div className="class">
+                <h2 className={`p-3 pt-4 ${styles.sectionTitle}`} id={props.classId}></h2>
                 <h2 className={`p-3 ${styles.sectionTitle}`}>{props.title}</h2>
                 <Card className="classCard">
                     <CardHeader  style={{background:"rgba(0,0,0,1)"}}>

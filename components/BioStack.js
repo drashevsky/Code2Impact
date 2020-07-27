@@ -83,6 +83,7 @@ export default class BioStack extends React.Component{
         return (
             <>
                 <div className="section">
+                    <h1 className={styles.sectionTitle}>Course Instructors</h1>
                     <Grid container spacing={2} justify={'flex-start'}>
                         {this.state.data.map((bio, i) => (
                             <Grid item md={3}>

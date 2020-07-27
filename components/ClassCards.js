@@ -31,6 +31,7 @@ export default class ClassCards extends React.Component {
                         takeaway="Students will code their own class implementations of advanced data structures to utilize for side projects and apply ADSs to projects based off real-word examples. Nearing the end of the course, students will be introduced to a cumulative project in which multiple ADSs are used."
                     />
                     <ClassCard
+
                         title="Data Science"
                         classId="datascience"
                         language="Python"
