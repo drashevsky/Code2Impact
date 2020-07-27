@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./text.module.css";
 import visible from "./visibility.module.css"
-import {ButtonGroup, ButtonToolbar, Button} from "shards-react";
+import { ButtonGroup, ButtonToolbar, Button } from "shards-react";
 
 export default class ClasslistClasses extends React.Component {
     render() {
@@ -31,7 +31,7 @@ export default class ClasslistClasses extends React.Component {
                 </div>
                 <style jsx>{`
                     .heading{
-                        min-height: 60vh;
+                        min-height: 50vh;
                         text-align: center;
                         padding: 10% 10% 0% 10%;
                     }  
