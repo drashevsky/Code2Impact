@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./text.module.css";
-import {Container, Row, Col, Button} from "shards-react";
+import { Container, Row, Col, Button } from "shards-react";
 
 export default class MissionHome extends React.Component {
     render() {
@@ -17,17 +17,19 @@ export default class MissionHome extends React.Component {
                             <Col md={6} className="m-0 p-0">
                                 <h2 className={`${styles.sectionTitle} ${styles.leftAlign} pt-5`}>Course Access</h2>
                                 <h5 className={`${styles.sectionSubtitle} ${styles.leftAlign}`}>
-                                    <strong> By donating to our GoFundMe, you will be able to access anywhere from 1 to 4 courses from our uniquely-crafted CS program, and your donations will go to professional organizations dedicated to supporting people of color in STEM fields and national organizations committed to making a change in the fight against race-based discrimination.</strong>
+                                    <strong> By donating to our GoFundMe, you will be able to access all 4 courses from our uniquely-crafted CS program, and your donations will go to professional organizations dedicated to supporting people of color in STEM fields and national organizations committed to making a change in the fight against race-based discrimination.</strong>
                                 </h5>
                             </Col>
-                            <Col md={6} className="m-0 p-0 pt-5" style={{display:"grid", placeItems:"center"}}>
+                            <Col md={6} className="m-0 p-0 pt-5" style={{ display: "grid", placeItems: "center" }}>
                                 <Container className="m-0 p-0">
+                                    <Row style={{ padding: 20 }}>
+                                        <Col>
+                                            <Button>Donate to unlock courses</Button>
+                                        </Col>
+                                    </Row>
                                     <Row>
                                         <Col>
-                                            <Button>Donate and unlock courses</Button>
-                                        </Col>
-                                        <Col>
-                                            <Button href="/calendar">View calendar</Button>
+                                            <Button href="/calendar">View course calendar</Button>
                                         </Col>
                                     </Row>
                                 </Container>
@@ -39,7 +41,7 @@ export default class MissionHome extends React.Component {
                     .mission{
                         min-height: 60vh;
                         text-align: center;
-                        padding: 5%;
+                        padding: 5% 5% 0% 5%;
                     }  
                 `}</style>
             </>
