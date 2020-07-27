@@ -24,7 +24,7 @@ export default class BioStack extends React.Component{
                 },
                 {
                     name:"Samarjit Kaushik",
-                    roles:"Website Lead and Advanced Data Structures",
+                    roles:"Advanced Data Structures",
                     bio:"Samarjit is a rising senior at Tesla STEM High School, and has experience with Java, Python, HTML, and C#. Some of his interests include coding (obviously), as well as biology and playing piano in his free time.",
                     img:""
                 },
@@ -41,7 +41,7 @@ export default class BioStack extends React.Component{
                     img:""
                 },
                 {
-                    name:"Mohamad",
+                    name:"Mohamed Awadalla",
                     roles:"Game Development",
                     bio:"I'm a senior at Redmond High school aspiring to become a computer scientist. I have a broad interest in game development, app development, and data science and currently, I'm interning at Sensoria Health Inc as an app developer. Through Code2Impact, I hope to teach others how to code while also giving back to my community.",
                     img:""
@@ -50,6 +50,12 @@ export default class BioStack extends React.Component{
                     name:"Henry Liao",
                     roles:"Data Science",
                     bio:"I’m currently a senior at Tesla STEM High School in Sammamish, Washington. I’ve been coding for 6 years now, on a variety of topics ranging from game design to computer vision with machine learning.  As of now, I’ve completed multiple online courses regarding machine learning in Python, have implemented computer vision for hazard detection in cars, and have interned at Microsoft to work on their Bing Visual Skills platform. Through teaching data science, I’m hoping to make higher-level concepts more approachable and accessible to interested high school computer science students.",
+                    img:""
+                },
+                {
+                    name:"Aran Punniamoorthy",
+                    roles:"Data Science",
+                    bio:"I am a rising senior pursuing my interests in machine learning and biology. This year I qualified for the national and international competitions for FBLA (Business), TSA (Technology), and HOSA (Health/Biology), learning a lot along the way. I've also explored machine learning a lot on my own, creating the state-of-the-art mobile architecture model for malaria detection (to my knowledge), and working on many other cool projects. I think machine learning especially has the potential to create meaningful social impact, and want to share what I've learned over the years with other students to help them do so.",
                     img:""
                 },
                 {
