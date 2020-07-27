@@ -1,4 +1,3 @@
-import Layout from '../components/Layout'
 import Head from 'next/head'
 import React from 'react'
 
@@ -29,11 +28,10 @@ class Calendar extends React.Component {
                         }}
                     ></script>
                 </Head>
-                <Layout calendar>
-                    <div id="calendar-container">
-                        <div id="calendar-root" key="calendar-root"></div>
-                    </div>
-                </Layout>
+                
+                <div id="calendar-container">
+                    <div id="calendar-root" key="calendar-root"></div>
+                </div>
                 
                 <style jsx global>{`
                     html {

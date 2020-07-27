@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import styles from '../components/text.module.css'
 import CourseAccess from '../components/CourseAccess'
 import FAQ from '../components/FAQ'
@@ -7,18 +6,16 @@ import FAQ from '../components/FAQ'
 export default function MoreInfo() {
     return (
         <>
-            <Layout>
-                <div className="info-container">
-                    <div className="info-section">
-                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Course Access Information</h1>
-                        <CourseAccess/>
-                    </div>
-                    <div className="info-section">
-                        <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Frequently Asked Questions</h1>
-                        <FAQ/>
-                    </div>
+            <div className="info-container">
+                <div className="info-section">
+                    <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Course Access Information</h1>
+                    <CourseAccess/>
                 </div>
-            </Layout>
+                <div className="info-section">
+                    <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Frequently Asked Questions</h1>
+                    <FAQ/>
+                </div>
+            </div>
             <style jsx>{`
                 .info-container {
                     min-height: 180vh;
