@@ -45,7 +45,7 @@ export default class ClassCards extends React.Component {
                         title="Game Development"
                         classId="gamedevelopment"
                         language="C#"
-                        reqs="None"
+                        reqs="Basic understanding of any coding language (e.g. knowing how if/else statements work)"
                         objective="Students will gain hands on experience with the Unity game engine which they will use to create a 2D platformer game. Along the way, they will learn about GameObjects, animations, collisions, and other prominent topics in game development. They will use C# to write scripts for various in-game features and mechanics and learn tips about player feedback and level design. By the end of the course, students will have created a complete 2d puzzle-platformer game with numerous levels which they have uniquely designed and will have attained a high level of familiarity with the core features of the Unity Game Engine to create future games on their own."
                         content={['Physics / Collisions', 'UI', 'Animations', 'Game mechanics', 'C# syntax', 'Prefabs / Level Design', 'Saving / Loading Data', 'Sounds/Music']}
                         takeaway="Students will create a 2d puzzle-platformer game which they will continuously develop as the course progresses. Students are free to customize and add their own unique elements throughout the course and seek guidance and feedback for their personal customizations through our mentorship program. Art and sprites will be provided."
