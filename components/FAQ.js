@@ -1,4 +1,6 @@
-import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core'
+import React from 'react';
+import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
+import { Card, CardBody } from 'shards-react';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 let faqs = [
@@ -13,12 +15,16 @@ export default function FAQ() {
 
     let faqslist = faqs.map((faq) => {
         return (
-            <Accordion style={{margin: '0% 5% 0% 5%', border: '1px solid rgba(0, 0, 0, .125)'}} key={faq.id}>
+            <Accordion style={{margin: '2% 5% 2% 5%', border: '1px solid rgba(0, 0, 0, .125)', borderRadius:'.4rem', background:'rgba(255,255,255,.2)', boxShadow:'0 0.5rem 2rem rgba(90,97,105,.2), 0 1rem 1.5rem rgba(90,97,105,.2), 0 0.25rem 0.5rem rgba(90,97,105,.24), 0 0.125rem 0.2rem rgba(90,97,105,.2)'}} key={faq.id}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon style={{ fontSize: 40 }}/>}>
-                    <h2>{faq.title}</h2>
+                    <h4 style={{color:'lightblue', marginBottom:'0'}}>{faq.title}</h4>
                 </AccordionSummary>
-                <AccordionDetails>
-                    <p style={{fontSize: '25px'}}>{faq.text}</p>
+                <AccordionDetails style={{padding:'8px'}}>
+                    <Card style={{background:'rgba(255,255,255,.2'}}>
+                        <CardBody className="p-3">
+                            <p style={{fontSize: '20px',color:'white', marginBottom:'0'}}>{faq.text}</p>
+                        </CardBody>
+                    </Card>
                 </AccordionDetails>
             </Accordion>
         )

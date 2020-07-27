@@ -1,3 +1,4 @@
+import React from 'react'
 import Layout from '../components/Layout'
 import styles from '../components/text.module.css'
 import CourseAccess from '../components/CourseAccess'
@@ -24,9 +25,10 @@ export default function MoreInfo() {
                 }
                 .info-section {
                     min-height: 90vh;
+                    margin-bottom: 10%;
                 }
                 .info-section-title {
-                    margin: 3% 5% 5% 5%;
+                    margin: 3% 5% 3% 5%;
                     text-align: center;
                 }
             `}</style>
