@@ -12,7 +12,7 @@ export default class MissionHome extends React.Component {
                         Code2Impact is raising money for the BLM movement through a nonprofit CS initiative. Code2Impact seeks to provide younger generation students new opportunities to pursue industrial and/or recreational applications of CS courses while raising awareness of minority students in STEM backgrounds.
                     </h4>
 
-                    <Container className="p-0 m-0 pt-3">
+                    <Container className="p-0 pt-3">
                         <Row className="m-0 p-0">
                             <Col md={6} className="m-0 p-0">
                                 <h2 className={`${styles.sectionTitle} ${styles.leftAlign} pt-5`}>Course Access</h2>
@@ -20,10 +20,17 @@ export default class MissionHome extends React.Component {
                                     <strong> By donating to our GoFundMe, you will be able to access anywhere from 1 to 4 courses from our uniquely-crafted CS program, and your donations will go to professional organizations dedicated to supporting people of color in STEM fields and national organizations committed to making a change in the fight against race-based discrimination.</strong>
                                 </h5>
                             </Col>
-                            <Col md={6} className="m-0 p-0 pt-5">
-                                <div className={`p-3`}>
-                                    <Button>Donate and unlock courses</Button>
-                                </div>
+                            <Col md={6} className="m-0 p-0 pt-5" style={{display:"grid", placeItems:"center"}}>
+                                <Container className="m-0 p-0">
+                                    <Row>
+                                        <Col>
+                                            <Button>Donate and unlock courses</Button>
+                                        </Col>
+                                        <Col>
+                                            <Button href="/calendar">View calendar</Button>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </Col>
                         </Row>
                     </Container>

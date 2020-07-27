@@ -52,7 +52,7 @@ export default class WhyusHome extends React.Component {
                                 </Col>
                             </Row>
                             <div className="mt-5 centered">
-                                <Button>View calendar</Button>
+                                <Button href="/calendar">View calendar</Button>
                             </div>
                         </div>
                     </div>
