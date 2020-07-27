@@ -64,6 +64,12 @@ export default class BioStack extends React.Component{
                     bio:"Hey everyone! My name is Dhruv Ashok and I'm going to be a junior at Juanita High School next year. I started programming a couple years back, and now I enjoy doing both web and mobile development. I'm very excited to begin teaching and helping everyone in any way I can!",
                     img:""
                 },
+                {
+                    name:"Kavya K",
+                    roles:"Intro to Java",
+                    bio:"I am a rising senior at Redmond High School, and I’m excited to be part of this project. Coding has been a passion of mine since I was 10 years old, learning to code with Python. I also code in Java, C# and C, and in my free time I love singing and playing music.",
+                    img:""
+                },
             ]
         }
     }
