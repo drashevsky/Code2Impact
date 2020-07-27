@@ -9,15 +9,16 @@
   },
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
     "classnames": "^2.2.6",
     "jquery": "^3.5.1",
     "next": "9.4.4",
+    "prop-types": "latest",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-swipeable-views": "^0.13.9",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
-    "shards-react": "^1.0.3",
-    "prop-types": "latest"
+    "shards-react": "^1.0.3"
   }
 }
