@@ -2,31 +2,29 @@ import Head from 'next/head'
 import React from 'react'
 
 class Calendar extends React.Component {
+    renderCalendar() {
+        var calendarEl = document.getElementById('calendar-root');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            height: '90%'
+        });
+        calendar.render();
+    }
+    
+    componentDidMount() {
+        this.renderCalendar();
+    }
+
+    componentDidUpdate() {
+        this.renderCalendar();
+    }
+
     render() {
         return (
             <>
                 <Head>
                     <link href ='https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css' rel='stylesheet' />
                     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js' type='text/javascript'/>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                                function renderCalendar() {
-                                    var calendarEl = document.getElementById('calendar-root');
-                                    var calendar = new FullCalendar.Calendar(calendarEl, {
-                                        initialView: 'dayGridMonth',
-                                        height: '90%'
-                                    });
-                                    calendar.render();
-                                }
-                                window.onload = () => {renderCalendar()};
-                                
-                                if (document.readyState === 'complete') {
-                                    renderCalendar();
-                                }
-                            `,
-                        }}
-                    ></script>
                 </Head>
                 
                 <div id="calendar-container">
