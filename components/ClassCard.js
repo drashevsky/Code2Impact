@@ -37,7 +37,7 @@ export default function ClassCard(props) {
                     }    
                     .class {
                         min-height: 40vh;
-                        margin: 10% 0% 10% 0%;
+                        margin: 0% 0% 10% 0%;
                     }
                     .centered {
                         text-align:center;

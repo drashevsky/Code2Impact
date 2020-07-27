@@ -15,7 +15,7 @@ export default class AboutDesc extends React.Component {
                     .heading{
                         min-height: 30vh;
                         text-align: center;
-                        padding: 10% 10% 5% 10%;
+                        padding: 5% 10% 5% 10%;
                     }
                 `}</style>
             </>

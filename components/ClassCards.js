@@ -59,7 +59,7 @@ export default class ClassCards extends React.Component {
                 <style jsx>{`
                     .section {
                         min-height: 80vh;
-                        padding: 10%;
+                        padding: 0% 10%;
                     }
                 `}</style>
             </>
