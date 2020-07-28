@@ -24,7 +24,7 @@ export default class MissionHome extends React.Component {
                                 <Container className="m-0 p-0">
                                     <Row style={{ padding: 20 }}>
                                         <Col>
-                                            <Button>Donate to unlock courses</Button>
+                                            <Button href="https://www.gofundme.com/f/fighting-discrimination-with-code">Donate to unlock courses</Button>
                                         </Col>
                                     </Row>
                                     <Row>

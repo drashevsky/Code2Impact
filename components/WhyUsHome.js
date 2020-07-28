@@ -51,9 +51,9 @@ export default class WhyusHome extends React.Component {
                                     </Card>
                                 </Col>
                             </Row>
-                            <div className="mt-5 centered">
+                            {/* <div className="mt-5 centered">
                                 <Button href="/calendar">View calendar</Button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="whyussection">
