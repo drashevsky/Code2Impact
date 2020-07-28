@@ -58,14 +58,32 @@ export default class NavBar extends React.Component {
                                     Home
                                 </NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink active href="/moreinfo">
-                                    Information
-                                </NavLink>
-                            </NavItem>
+                            <Dropdown
+                                open={this.state.dropdownOpen}
+                                toggle={this.toggleDropdown}
+                                group
+                            >
+                                <NavItem>
+                                    <NavLink active href="/classes">
+                                        Classes
+                                    </NavLink>
+                                </NavItem>
+                                <DropdownToggle nav split/>
+                                <DropdownMenu>
+                                    <DropdownItem href="/classes#introtojava">APCSA</DropdownItem>
+                                    <DropdownItem href="/classes#datastructures">Data Structures</DropdownItem>
+                                    <DropdownItem href="/classes#gamedevelopment">Game Development</DropdownItem>
+                                    <DropdownItem href="/classes#datascience">Data Science</DropdownItem>
+                                </DropdownMenu>
+                            </Dropdown>
                             <NavItem>
                                 <NavLink active href="/calendar">
                                     Calendar
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink active href="/moreinfo">
+                                    Program Info
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -73,24 +91,6 @@ export default class NavBar extends React.Component {
                                     About
                                 </NavLink>
                             </NavItem>
-                                <Dropdown
-                                    open={this.state.dropdownOpen}
-                                    toggle={this.toggleDropdown}
-                                    group
-                                >
-                                    <NavItem>
-                                        <NavLink active href="/classes">
-                                            Classes
-                                        </NavLink>
-                                    </NavItem>
-                                    <DropdownToggle nav split/>
-                                    <DropdownMenu>
-                                        <DropdownItem href="/classes#introtojava">APCSA</DropdownItem>
-                                        <DropdownItem href="/classes#datastructures">Data Structures</DropdownItem>
-                                        <DropdownItem href="/classes#gamedevelopment">Game Development</DropdownItem>
-                                        <DropdownItem href="/classes#datascience">Data Science</DropdownItem>
-                                    </DropdownMenu>
-                                </Dropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>
