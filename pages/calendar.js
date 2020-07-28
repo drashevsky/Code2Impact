@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import React from 'react'
 
+const startDate = '2020-08-07';
+
 class Calendar extends React.Component {
     renderCalendar() {
         var calendarEl = document.getElementById('calendar-root');
         var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
-            height: '90%'
+            height: '90%',
+            initialDate: startDate,
+            events: courseSchedule,
+            eventTimeFormat: {hour: 'numeric', minute: '2-digit', meridiem: 'short'}
         });
         calendar.render();
     }
@@ -70,5 +75,40 @@ class Calendar extends React.Component {
         )
     }
 }
-  
-  export default Calendar;
+
+let courseSchedule = [
+	{
+        title: 'Course 1',
+		daysOfWeek: [5, 6],
+		startTime: '14:00',
+		endTime: '16:00',
+		startRecur: '2020-08-07',
+		endRecur: '2020-08-31'
+	},
+	{
+        title: 'Course 2',
+		daysOfWeek: [5, 6],
+		startTime: '16:00',
+		endTime: '18:00',
+		startRecur: '2020-08-07',
+		endRecur: '2020-08-31'
+	},
+	{
+        title: 'Course 3',
+		daysOfWeek: [0, 1],
+		startTime: '14:00',
+		endTime: '16:00',
+		startRecur: '2020-08-07',
+		endRecur: '2020-08-31'
+	},
+	{
+        title: 'Course 4',
+		daysOfWeek: [0, 1],
+		startTime: '16:00',
+		endTime: '18:00',
+		startRecur: '2020-08-07',
+		endRecur: '2020-08-31'
+	}
+];
+
+export default Calendar;
