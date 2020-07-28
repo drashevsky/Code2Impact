@@ -1,9 +1,27 @@
 import Head from 'next/head'
 import React from 'react'
+import EventModal from '../components/EventModal'
 
 const startDate = '2020-08-07';
 
 class Calendar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            open: false,
+            title: "",
+            startDate: new Date(),
+            endDate: new Date()
+        };
+        this.toggle = this.toggle.bind(this);
+    }
+    
+    toggle() {
+        this.setState({
+            open: !this.state.open
+        });
+    }
+
     renderCalendar() {
         var calendarEl = document.getElementById('calendar-root');
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -11,7 +29,15 @@ class Calendar extends React.Component {
             height: '90%',
             initialDate: startDate,
             events: courseSchedule,
-            eventTimeFormat: {hour: 'numeric', minute: '2-digit', meridiem: 'short'}
+            eventTimeFormat: {hour: 'numeric', minute: '2-digit', meridiem: 'short'},
+            eventClick: (info) => {
+                this.setState({
+                    open: true,
+                    title: info.event.title,
+                    startDate: info.event.start,
+                    endDate: info.event.end
+                })
+            }
         });
         calendar.render();
     }
@@ -31,7 +57,14 @@ class Calendar extends React.Component {
                     <link href ='https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css' rel='stylesheet' />
                     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js' type='text/javascript'/>
                 </Head>
-                
+
+                <EventModal open={this.state.open} 
+                            toggle={this.toggle}
+                            title={this.state.title}
+                            startDate={this.state.startDate}
+                            endDate={this.state.endDate}
+                ></EventModal>
+
                 <div id="calendar-container">
                     <div id="calendar-root" key="calendar-root"></div>
                 </div>
