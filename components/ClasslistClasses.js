@@ -31,7 +31,7 @@ export default class ClasslistClasses extends React.Component {
                 </div>
                 <style jsx>{`
                     .heading{
-                        min-height: 50vh;
+                        min-height: 0vh;
                         text-align: center;
                         padding: 5% 10% 0% 10%;
                     }  
