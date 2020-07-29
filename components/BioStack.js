@@ -29,6 +29,12 @@ export default class BioStack extends React.Component {
                     img: ""
                 },
                 {
+                    name: "Daniel Rashevsky",
+                    roles: "The Dev Team",
+                    bio: "Daniel Rashevsky is an incoming freshman at the University of Washington, where he is majoring in Computer Science. He is an avid coder, experimenting with everything from web development to assembly language. Currently, he works as a software engineering intern at AppEsteem. In his free time, he enjoys building RC aircraft, and browsing Reddit/Hacker News. He hopes to build Code2Impact as a platform to educate and inspire change.",
+                    img: ""
+                },
+                {
                     name: "Raghav Narula",
                     roles: "Game Development",
                     bio: "Hey, I’m Raghav Narula, an avid coder and soon to be a senior at Redmond High School in Washington. I started tinkering with the Unity Game engine and making games a few years ago. I’ve always had fun trying to bring new, exciting, and crazy ideas to life, so it has remained one of my favorite hobbies to this day. When I’m not practicing game art or building games with friends, I usually play online chess, build websites (more coding lol), learn Spanish and spend time with my family.",
