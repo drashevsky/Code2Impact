@@ -119,7 +119,7 @@ let courseSchedule = [
 		endRecur: '2020-08-31'
 	},
 	{
-        title: 'Course 2',
+        title: 'Data Science',
 		daysOfWeek: [5, 6],
 		startTime: '16:00',
 		endTime: '18:00',
@@ -135,7 +135,7 @@ let courseSchedule = [
 		endRecur: '2020-08-31'
 	},
 	{
-        title: 'Course 4',
+        title: 'Data Structures',
 		daysOfWeek: [0, 1],
 		startTime: '16:00',
 		endTime: '18:00',
