@@ -111,7 +111,7 @@ class Calendar extends React.Component {
 
 let courseSchedule = [
 	{
-        title: 'Course 1',
+        title: 'Intro to Java',
 		daysOfWeek: [5, 6],
 		startTime: '14:00',
 		endTime: '16:00',
@@ -127,7 +127,7 @@ let courseSchedule = [
 		endRecur: '2020-08-31'
 	},
 	{
-        title: 'Course 3',
+        title: 'Game Development',
 		daysOfWeek: [0, 1],
 		startTime: '14:00',
 		endTime: '16:00',
