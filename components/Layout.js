@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import NavBar from "./Navbar";
+import NavBar from './Navbar';
+import Footer from './Footer';
 
 export default function Layout(props) {
     return (
@@ -12,7 +13,8 @@ export default function Layout(props) {
 
             <div className="root">
                 <NavBar />
-                {props.children}
+                    {props.children}
+                <Footer />
             </div>
 
             <style jsx global>{`
