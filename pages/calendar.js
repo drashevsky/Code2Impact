@@ -103,6 +103,16 @@ class Calendar extends React.Component {
                     table {
                         width: 100% !important;
                     }
+
+                    .fc-daygrid-event {
+                        white-space: unset;
+                    }
+
+                    @media (max-width: 600px) {
+                        .fc-daygrid-event-dot {
+                            display: none;
+                        }
+                    }
                 `}</style>
             </>
         )
