@@ -11,7 +11,7 @@ export default function MoreInfo() {
                     <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Course Access Information</h1>
                     <CourseAccess/>
                 </div>
-                <div className="info-section">
+                <div>
                     <h1 className={`${styles.sectionTitle} ${styles.leftAlign} info-section-title`}>Frequently Asked Questions</h1>
                     <FAQ/>
                 </div>

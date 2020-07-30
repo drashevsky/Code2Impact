@@ -82,6 +82,12 @@ export default class BioStack extends React.Component {
                     bio: "I am a rising senior at Redmond High School, and I’m excited to be part of this project. Coding has been a passion of mine since I was 10 years old, learning to code with Python. I also code in Java, C# and C, and in my free time I love singing and playing music.",
                     img: ""
                 },
+                {
+                    name: "Vanya Dimri",
+                    roles: "Advanced Data Structures",
+                    bio: "Vanya Dimri is a rising senior at Redmond High School. She is passionate about STEM education and is particularly interested in reinforcement learning and AI/ML transparency research. Some of her past coding projects include implementing computer vision to build a sign language translator and building multiple interactive games. When she's not endlessly searching through StackOverflow, you can find her playing the violin, dancing, and annotating music on Genius. Vanya is thrilled to be a part of Code2Impact and is looking forward to class this summer!",
+                    img: ""
+                }
             ]
         }
     }
@@ -102,7 +108,7 @@ export default class BioStack extends React.Component {
                 <style jsx>{`
                     .section {
                         min-height: 80vh;
-                        padding: 0% 10% 10% 10%;
+                        padding: 0% 10% 0% 10%;
                     }
                 `}</style>
             </>

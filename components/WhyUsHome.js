@@ -81,8 +81,8 @@ export default class WhyusHome extends React.Component {
                         padding: 0% 10% 0% 10%;
                     }    
                     .whyussection {
-                        min-height: 40vh;
-                        margin: 10% 0% 10% 0%;
+                        min-height: 30vh;
+                        margin: 10% 0% 0% 0%;
                     }
                     .centered {
                         text-align:center;
