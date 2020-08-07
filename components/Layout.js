@@ -8,6 +8,11 @@ export default function Layout(props) {
         <>
             <Head>
                 <title>Code 2 Impact</title>
+                <meta name="description" content="Code2Impact is raising money for the BLM movement through a nonprofit CS initiative. It seeks to provide younger students with new opportunities to pursue real-life applications of CS courses, while raising awareness of STEM backgrounds with minority students." />
+                <meta property="og:url" content="https://code2impact.org" />
+                <meta property="og:title" content="Code 2 Impact" />
+                <meta property="og:description" content="Code2Impact is raising money for the BLM movement through a nonprofit CS initiative. It seeks to provide younger students with new opportunities to pursue real-life applications of CS courses, while raising awareness of STEM backgrounds with minority students." />
+                <meta property="og:image" content="https://code2impact.org/logo.png" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
