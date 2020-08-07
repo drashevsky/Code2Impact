@@ -17,7 +17,7 @@ export default function CourseAccess() {
                             As an extension for our live video lectures, we will publish our live lectures as 1) a series of shortened 10-20 minute videos to our course website with question session functionality and 2) an uncut, recorded version of the live lecture. Students will gain access to the shortened video series a day after the live session. Depending on the course, video summaries may be published.
                         </p>
                         <h5 className={`${castyles.textHeading} mt-5 mb-3`}>Donating &amp; Accessing Courses</h5>
-                        <p className={castyles.text}>Please see the FAQ for more details on how to donate and access our courses.</p>
+                        <p className={castyles.text}>Please see the FAQ below for more details on how to donate and access our courses.</p>
                     </Col>
                     <Col className={castyles.border}>
                         <h4 className={castyles.sectionTitle}>Accessing the Mentorship Program</h4>
