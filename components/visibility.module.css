@@ -1,0 +1,16 @@
+.onPhone{
+    display: none;
+}
+@media (max-width: 600px){
+    .onPhone{
+        display: initial;
+    }
+}
+.notPhone{
+    display: initial;
+}
+@media (max-width: 600px){
+    .notPhone{
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+.sectionTitle{
+    color:white;
+}
+.sectionSubtitle{
+    color:lightblue;
+}
+.rightAlign{
+    text-align: right;
+}
+.leftAlign{
+    text-align: left;
+}
+.padRight{
+    padding-right: 40%;
+
+}
+@media (max-width: 600px){
+    .padRight{
+        padding-right: 0%;
+    }
+}
+.padLeft{
+    padding-left: 40%;
+}
+@media (max-width: 600px){
+    .padLeft{
+        padding-left: 0%;
+    }
+}
